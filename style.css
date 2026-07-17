@@ -145,7 +145,7 @@ nav ul li a:hover{
             rgba(0,0,0,.70),
             rgba(0,0,0,.25)
         ),
-        url("./HERO SECTION BIG IMAGE.png");
+        url("./HERO\ SECTION\ BIG\ IMAGE.png");
 
     background-size: cover;
     background-position: center;
