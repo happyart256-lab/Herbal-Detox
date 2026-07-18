@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GreenBasket Shop</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="shop.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-leaf"></i>
+
+<div>
+
+<h2>GreenBasket</h2>
+
+<p>Eat Fresh. Live Well.</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a class="active" href="shop.html">Shop</a></li>
+
+<li><a href="#">Categories</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="icons">
+
+<i class="fas fa-search"></i>
+
+<i class="far fa-user"></i>
+
+<a href="cart.html" class="cart">
+
+<i class="fas fa-shopping-cart"></i>
+
+<span>0</span>
+
+</a>
+
+</div>
+
+</header>
+
+<!-- Shop Banner -->
+
+<section class="shop-banner">
+
+<h1>Shop Fresh Organic Products</h1>
+
+<p>Natural • Healthy • Fresh</p>
+
+</section>
+
+<!-- Shop Content -->
+
+<section class="shop-container">
+
+<aside class="filter">
+
+<h3>Categories</h3>
+
+<ul id="categoryList">
+
+<li data-filter="all">All Products</li>
+
+<li data-filter="juice">Juices</li>
+
+<li data-filter="honey">Honey</li>
+
+<li data-filter="roots">Roots</li>
+
+<li data-filter="powder">Powders</li>
+
+<li data-filter="tea">Herbal Tea</li>
+
+</ul>
+</aside>
+
+<div class="shop-top">
+
+    <input type="text"
+           id="search"
+           placeholder="Search products...">
+
+    <select id="sort">
+
+        <option>Default</option>
+        <option>Price Low to High</option>
+        <option>Price High to Low</option>
+
+    </select>
+
+</div>
+
+<div class="products">
+
+<div class="product-card" data-category="juice">
+
+<span class="badge">20% OFF</span>
+
+<img src="images/juice.jpg" alt="">
+
+<div class="rating">
+
+★★★★★
+
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Green Herbal Juice</h3>
+
+<p>Natural Herbal Drink</p>
+
+<div class="price">
+
+<span>$15.99</span>
+
+<del>$19.99</del>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Green Herbal Juice"
+
+data-price="15.99">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card" data-category="honey">
+
+<span class="badge">NEW</span>
+
+<img src="images/honey.jpg">
+
+<div class="rating">
+
+★★★★★
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Forest Honey</h3>
+
+<p>100% Pure Honey</p>
+
+<div class="price">
+
+<span>$18.99</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Forest Honey"
+
+data-price="18.99">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card" data-category="roots">
+
+<img src="images/aloe.jpg">
+
+<div class="rating">
+
+★★★★☆
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Aloe Vera Juice</h3>
+
+<p>Natural Cleanser</p>
+
+<div class="price">
+
+<span>$12.50</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Aloe Vera Juice"
+
+data-price="12.50">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+</div>
+
+</div>
+
+<div class="product-card" data-category="powder">
+
+<span class="badge">BEST</span>
+
+<img src="images/ginseng.jpg">
+
+<div class="rating">
+
+★★★★★
+
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Ginseng Roots</h3>
+
+<p>Premium Quality</p>
+
+<div class="price">
+
+<span>$29.99</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Ginseng Roots"
+
+data-price="29.99">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+</div>
+
+</div>
+
+<div class="product-card" data-category="tea">
+
+<img src="images/moringa.jpg">
+
+<div class="rating">
+
+★★★★★
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Moringa Powder</h3>
+
+<p>Organic Leaves</p>
+
+<div class="price">
+
+<span>$14.99</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Moringa Powder"
+
+data-price="14.99">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+<div class="product-card" data-category="aloe">
+
+<span class="badge">HOT</span>
+
+<img src="images/cactus.jpg">
+
+<div class="rating">
+
+★★★★☆
+
+<div class="product-icons">
+
+    <i class="fas fa-heart wishlist"></i>
+
+    <i class="fas fa-eye quick-view"></i>
+
+</div>
+
+</div>
+
+<h3>Cactus Juice</h3>
+
+<p>Fresh & Healthy</p>
+
+<div class="price">
+
+<span>$13.99</span>
+
+</div>
+
+<div class="buttons">
+
+<a href="product.html" class="view-btn">View</a>
+
+<button class="cart-btn"
+
+data-name="Cactus Juice"
+
+data-price="13.99">
+
+<i class="fas fa-shopping-cart"></i>
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<div class="modal" id="quickView">
+
+    <div class="modal-content">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage" src="" alt="">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <h3 id="modalPrice"></h3>
+
+        <button class="shop">Add To Cart</button>
+
+    </div>
+
+</div>
+</body>
+
+</html>

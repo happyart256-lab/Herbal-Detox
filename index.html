@@ -1,400 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Eco Homes</title>
+<title>GreenBasket</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
 <body>
 
-
-<!-- NAVIGATION -->
+<!--================ NAVBAR ================-->
 
 <header>
 
-    
-
 <div class="logo">
-Herbal Detox
+
+<i class="fa-solid fa-leaf"></i>
+
+<div>
+<h2>GreenBasket</h2>
+<p>Eat Fresh. Live Well.</p>
+</div>
+
 </div>
 
 <nav>
 
-
 <ul>
 
-<li><a href="#">Home</a></li>
+<li><a href="#" class="active">Home</a></li>
 
-<li><a href="#">Properties</a></li>
+<li><a href="./shop.html">Shop</a></li>
 
-<li><a href="#">Agents</a></li>
+<li><a href="#">Categories</a></li>
 
 <li><a href="#">About</a></li>
 
-<li><a href="#">Contact</a></li>
-
+<li><a href="#">How It Works</a></li>
 
 </ul>
 
 </nav>
 
-<div class="nav-icons">
+<div class="icons">
 
 <i class="fa-solid fa-magnifying-glass"></i>
 
+<i class="fa-regular fa-user"></i>
 
-<button>Get Started</button>
+<div class="cart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>3</span>
+
+</div>
+
+</div>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
 
 </div>
 
 </header>
 
+<!--============== SIDE NAV ==============-->
 
+<div class="sidebar">
 
-<!-- HERO -->
+<div class="close-btn">
 
-<section class="hero">
+<i class="fa-solid fa-xmark"></i>
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="./shop.html">Shop</a></li>
+
+<li><a href="#">Categories</a></li>
+
+<li><a href="#">About Us</a></li>
+
+<li><a href="#">How It Works</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+<div class="sidebar-products">
+
+    <div class="product">
+
+        <img src="images/juice1.jpg" alt="">
+
+        <h4>Green Juice</h4>
+
+        <span>$12.99</span>
+
+    </div>
+
+    <div class="product">
+
+        <img src="images/juice2.jpg" alt="">
+
+        <h4>Natural Honey</h4>
+
+        <span>$9.99</span>
+
+    </div>
+
+    <div class="product">
+
+        <img src="images/juice3.jpg" alt="">
+
+        <h4>Herbal Tea</h4>
+
+        <span>$8.99</span>
+
+    </div>
+
+    <div class="product">
+
+        <img src="images/juice4.jpg" alt="">
+
+        <h4>Moringa</h4>
+
+        <span>$15.99</span>
+
+    </div>
+
+    <div class="product">
+
+        <img src="images/juice5.jpg" alt="">
+
+        <h4>Ginseng</h4>
+
+        <span>$13.99</span>
+
+    </div>
+
+    <div class="product">
+
+        <img src="images/juice6.jpg" alt="">
+
+        <h4>Aloe Vera</h4>
+
+        <span>$7.99</span>
+
+    </div>
+
+</div>
+
+</div>
 
 <div class="overlay"></div>
 
-<div class="hero-content">
+<!--============= HERO =============-->
 
-<span class="badge">
+<section class="hero">
 
-<i class="fa-solid fa-leaf"></i>
+<div class="hero-text">
 
-Herbal Medicines
-
-</span>
+<h4>Farm Fresh</h4>
 
 <h1>
 
-Healing Through <br>
+Good Food<br>
 
-Nature
+Good Life
 
 </h1>
 
 <p>
 
-We provide 100% natural herbal products made with traditional medicinal plants to help
-support your body's natural healing process.
-</p>
-
-<button class="hero-btn">
-
-Explore Remedies
-
-</button>
-
-</div>
-
-</section>
-
-
-
-
-<!-- SEARCH BAR -->
-
-<section class="search">
-
-<div class="search-box">
-
-<input type="text" placeholder="Search herbal product">
-
-<input type="text" placeholder="Health concern">
-
-<input type="text" placeholder="Select category">
-
-<button>
-
-<i class="fa fa-search"></i>
-
-Search
-
-</button>
-
-</div>
-
-</section>
-
-
-
-
-<!-- WELCOME -->
-
-<section class="welcome">
-
-<div class="welcome-image">
-
-<img src="images/home1.jpg">
-
-</div>
-
-<div class="welcome-text">
-
-<h2>
-
-Welcome to Herbal Detox
-
-</h2>
-
-<p>
-
-Explore beautiful eco-friendly houses built for
-comfort, sustainability and modern living.
-Find your dream home with trusted agents and
-verified listings.
+Organic fruits, vegetables & more delivered fresh to your door.
 
 </p>
 
 <div class="buttons">
 
-<button class="green">
+<a href="#" class="shop">Shop Now</a>
 
-View Listings
+<a href="#" class="explore">Explore Categories</a>
 
-</button>
+</div>
 
-<button class="white">
+<div class="features">
 
-Read More
+<div>
 
-</button>
+<i class="fa-solid fa-seedling"></i>
+
+<h5>100% Organic</h5>
+
+<p>Certified & Natural</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-truck"></i>
+
+<h5>Fast Delivery</h5>
+
+<p>On-Time</p>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-recycle"></i>
+
+<h5>Sustainable</h5>
+
+<p>Eco Friendly</p>
 
 </div>
 
 </div>
 
-</section>
-
-
-
-
-
-<!-- PROPERTY SECTION -->
-
-<section class="properties">
-
-<h2>
-
-Featured Eco Homes
-
-</h2>
-
-<div class="cards">
-
-
-
-<div class="card">
-
-<img src="images/home1.jpg">
-
-<div class="card-content">
-
-<h3>
-
-Sexual Health
-
-</h3>
-
-<p>
-
-Last-longer in Bed, Premature Ejaculation, Masturbation problems,
-Nerves Cleanser, Sperm count & Fertility. 
-
-
-</p>
-
-<button>
-
-Learn More
-
-</button>
-
 </div>
 
-</div>
+<div class="hero-image">
 
-
-
-
-
-<div class="card">
-
-<img src="images/home2.jpg">
-
-<div class="card-content">
-
-<h3>
-
-Detox & Cleansing
-
-</h3>
-
-<p>
-
-Large sustainable family home with beautiful views.
-
-</p>
-
-<button>
-
-Learn More
-
-</button>
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<img src="images/home3.jpg">
-
-<div class="card-content">
-
-<h3>
-
-Nature Living Home
-
-</h3>
-
-<p>
-
-Energy efficient home with modern architecture.
-
-</p>
-
-<button>
-
-Learn More
-
-</button>
-
-</div>
-
-</div>
-
+<img src="images/hero.png">
 
 </div>
 
 </section>
 
+<!--==========================
+ SHOP BY CATEGORY
+===========================-->
 
+<section class="categories">
 
+    <div class="section-title">
 
-<!-- WHY CHOOSE US -->
+        <h5>SHOP BY CATEGORY</h5>
 
-<section class="features">
+        <h2>Best of Nature, Handpicked for You</h2>
 
-<h2>
+    </div>
 
-Why Choose EcoHomes?
+    <div class="category-container">
 
-</h2>
+        <div class="card">
 
-<div class="feature-grid">
+            <img src="images/vegetables.jpg" alt="Vegetables">
 
-<div class="feature">
+            <div class="card-content">
 
-<i class="fa-solid fa-tree"></i>
+                <h3>Vegetables</h3>
 
-<h3>Eco Friendly</h3>
+                <p>Fresh & Organic</p>
 
-<p>Homes built with sustainable materials.</p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 
-</div>
+            </div>
 
-<div class="feature">
+        </div>
 
-<i class="fa-solid fa-solar-panel"></i>
+        <div class="card">
 
-<h3>Solar Powered</h3>
+            <img src="images/fruits.jpg" alt="Fruits">
 
-<p>Save electricity with renewable energy.</p>
+            <div class="card-content">
 
-</div>
+                <h3>Fruits</h3>
 
-<div class="feature">
+                <p>Juicy & Natural</p>
 
-<i class="fa-solid fa-shield"></i>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 
-<h3>Secure</h3>
+            </div>
 
-<p>Safe communities with verified listings.</p>
+        </div>
 
-</div>
+        <div class="card">
 
-<div class="feature">
+            <img src="images/dairy.jpg" alt="Dairy">
 
-<i class="fa-solid fa-house"></i>
+            <div class="card-content">
 
-<h3>Affordable</h3>
+                <h3>Dairy & Eggs</h3>
 
-<p>Luxury homes at competitive prices.</p>
+                <p>Farm Fresh</p>
 
-</div>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
 
-</div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/grains.jpg" alt="Grains">
+
+            <div class="card-content">
+
+                <h3>Grains & Pulses</h3>
+
+                <p>Healthy Choice</p>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <img src="images/pantry.jpg" alt="Pantry">
+
+            <div class="card-content">
+
+                <h3>Pantry Staples</h3>
+
+                <p>Daily Essentials</p>
+
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
+<!--==========================
+DELIVERY SECTION
+===========================-->
 
+<section class="delivery">
 
-<!-- FOOTER -->
+    <div class="delivery-content">
+
+        <span>FAST & RELIABLE DELIVERY</span>
+
+        <h2>From Our Farm To Your Home</h2>
+
+        <p>
+            We carefully select fresh organic products from trusted farms
+            and deliver them directly to your doorstep with speed and care.
+        </p>
+
+        <div class="delivery-features">
+
+            <div class="feature-box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h4>Same Day Delivery</h4>
+                    <p>Fresh products delivered quickly.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-shield-heart"></i>
+                <div>
+                    <h4>Quality Guaranteed</h4>
+                    <p>100% fresh and carefully packed.</p>
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <i class="fa-solid fa-leaf"></i>
+                <div>
+                    <h4>Eco Friendly</h4>
+                    <p>Sustainably sourced products.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="shop">Order Now</a>
+
+    </div>
+
+    <div class="delivery-card">
+
+        <div class="driver">
+
+            <img src="images/driver.jpg" alt="Driver">
+
+            <div>
+                <h3>James Driver</h3>
+                <p>Your order is on the way</p>
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+
+            <small>Estimated arrival: 15 Minutes</small>
+
+        </div>
+
+        <div class="map">
+
+            <img src="images/map.jpg" alt="Map">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+FEATURED PRODUCTS
+===========================-->
+
+<section class="featured">
+
+    <div class="section-title">
+        <h5>FEATURED PRODUCTS</h5>
+        <h2>Fresh Picks For You</h2>
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <span class="discount">-15%</span>
+
+            <img src="images/apple.jpg" alt="Apple">
+
+            <h3>Fresh Apples</h3>
+
+            <p>Crispy Organic Apples</p>
+
+            <div class="price">
+
+                <span>$8.99</span>
+
+                <small>$10.99</small>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">-20%</span>
+
+            <img src="images/orange.jpg" alt="Orange">
+
+            <h3>Sweet Oranges</h3>
+
+            <p>Vitamin C Rich</p>
+
+            <div class="price">
+
+                <span>$6.50</span>
+
+                <small>$8.20</small>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">New</span>
+
+            <img src="images/juice.jpg" alt="Juice">
+
+            <h3>Green Juice</h3>
+
+            <p>100% Natural</p>
+
+            <div class="price">
+
+                <span>$12.50</span>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">Best</span>
+
+            <img src="images/honey.jpg" alt="Honey">
+
+            <h3>Natural Honey</h3>
+
+            <p>Pure Forest Honey</p>
+
+            <div class="price">
+
+                <span>$14.99</span>
+
+            </div>
+
+            <button>Add To Cart</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+STATISTICS
+===========================-->
+
+<section class="stats">
+
+    <div class="stat-box">
+
+        <h2>10K+</h2>
+
+        <p>Happy Customers</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>250+</h2>
+
+        <p>Organic Products</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>35+</h2>
+
+        <p>Professional Farmers</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>99%</h2>
+
+        <p>Customer Satisfaction</p>
+
+    </div>
+
+</section>
+
+<!--==========================
+TESTIMONIALS
+===========================-->
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <h5>TESTIMONIALS</h5>
+        <h2>What Our Customers Say</h2>
+    </div>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>
+                "The vegetables are always fresh and delivery is incredibly
+                fast. I highly recommend GreenBasket."
+            </p>
+
+            <h3>Sarah Johnson</h3>
+            <span>★★★★★</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Amazing quality products. Ordering online has never been
+                easier."
+            </p>
+
+            <h3>David Brown</h3>
+            <span>★★★★★</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Fresh products, affordable prices and excellent customer
+                service every time."
+            </p>
+
+            <h3>Emily Wilson</h3>
+            <span>★★★★★</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+NEWSLETTER
+===========================-->
+
+<section class="newsletter">
+
+    <h2>Subscribe To Our Newsletter</h2>
+
+    <p>
+        Receive weekly offers and fresh product updates.
+    </p>
+
+    <form>
+
+        <input type="email" placeholder="Enter your email">
+
+        <button>Subscribe</button>
+
+    </form>
+
+</section>
+
+<!--==========================
+FOOTER
+===========================-->
 
 <footer>
 
-<h3>EcoHomes</h3>
+<div class="footer-container">
+
+<div>
+
+<h2>GreenBasket</h2>
 
 <p>
-
-Building a greener future, one home at a time.
-
+Fresh organic groceries delivered to your doorstep.
 </p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Shop</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Support</h3>
+
+<ul>
+
+<li><a href="#">FAQs</a></li>
+
+<li><a href="#">Privacy Policy</a></li>
+
+<li><a href="#">Terms & Conditions</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
 
 <div class="social">
 
-<i class="fab fa-facebook"></i>
+<i class="fab fa-facebook-f"></i>
 
 <i class="fab fa-instagram"></i>
 
 <i class="fab fa-twitter"></i>
 
-<i class="fab fa-linkedin"></i>
+<i class="fab fa-youtube"></i>
 
 </div>
 
-<p>
+</div>
 
-© 2026 EcoHomes. All Rights Reserved.
+</div>
 
-</p>
+<div class="copyright">
+
+© 2026 GreenBasket. All Rights Reserved.
+
+</div>
 
 </footer>
 
-
+<button id="topBtn">
+<i class="fas fa-arrow-up"></i>
+</button>
 
 <script src="script.js"></script>
 
