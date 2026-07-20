@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="shop.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>GreenBasket</h2>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="checkout">
+
+<div class="billing">
+
+<h2>Billing Details</h2>
+
+<form id="checkoutForm">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="text" placeholder="Country" required>
+
+<input type="text" placeholder="City" required>
+
+<input type="text" placeholder="Street Address" required>
+
+<textarea placeholder="Order Notes"></textarea>
+
+<button type="submit" class="shop">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+<div class="order-summary">
+
+<h2>Your Order</h2>
+
+<div id="summaryItems"></div>
+
+<h3>Total: $<span id="checkoutTotal">0.00</span></h3>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -553,3 +553,104 @@ cursor:pointer;
 font-size:18px;
 
 }
+
+/*=========================
+CHECKOUT
+=========================*/
+
+.checkout{
+
+padding:130px 7%;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+}
+
+.billing{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.billing h2{
+
+margin-bottom:25px;
+
+}
+
+.billing form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.billing input,
+.billing textarea{
+
+padding:16px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+}
+
+.billing textarea{
+
+height:120px;
+
+resize:none;
+
+}
+
+.order-summary{
+
+background:#f8faf8;
+
+padding:30px;
+
+border-radius:20px;
+
+height:fit-content;
+
+}
+
+.summary-item{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:15px 0;
+
+padding-bottom:10px;
+
+border-bottom:1px solid #ddd;
+
+}
+
+@media(max-width:900px){
+
+.checkout{
+
+grid-template-columns:1fr;
+
+}
+
+}
