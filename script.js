@@ -75,7 +75,7 @@ badge:"20% OFF"
 {
 name:" Ulcers Tea",
 price:"UGX60,000",
-image:"uterus cleanser.png",
+image:"ulcer tea for menu-chart.png",
 badge:"Fresh"
 },
 
