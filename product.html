@@ -1,120 +1,851 @@
  <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="viewport" 
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<title>Green Herbal Juice</title>
+    <title>SilkSkin Serum - Product Details</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="shop.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" 
+        rel="stylesheet"
+    >
 
+    <!-- Font Awesome Icons -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./product.css">
 </head>
 
 <body>
 
-<header>
+<!-- =========================
+     PAGE HEADER
+========================= -->
 
-<div class="logo">
+<header class="page-header">
 
-<h2>GreenBasket</h2>
+    <div class="header-decoration decoration-one"></div>
+    <div class="header-decoration decoration-two"></div>
 
-</div>
+    <h1>Shop</h1>
 
-<nav>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="shop.html">Shop</a></li>
-
-</ul>
-
-</nav>
+    <div class="breadcrumb">
+        <span>Home</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Shop</span>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Product Details</span>
+    </div>
 
 </header>
 
-<section class="product-details">
 
-<div class="product-gallery">
+<!-- =========================
+     MAIN PRODUCT SECTION
+========================= -->
 
-<img src="images/juice.jpg" class="main-image">
+<main class="product-container">
 
-<div class="thumbnails">
+    <!-- =====================
+         PRODUCT IMAGE GALLERY
+    ====================== -->
 
-<img src="images/juice.jpg">
+    <section class="product-gallery">
 
-<img src="images/juice2.jpg">
+        <div class="main-image-container">
 
-<img src="images/juice3.jpg">
+            <button 
+                class="gallery-button previous-button"
+                id="previousButton"
+            >
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-<img src="images/juice4.jpg">
+            <img 
+                id="mainProductImage"
+                src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1000&q=80"
+                alt="SilkSkin Serum"
+            >
 
-</div>
+            <button 
+                class="gallery-button next-button"
+                id="nextButton"
+            >
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
 
-</div>
+        </div>
 
-<div class="product-info">
 
-<h1>Green Herbal Juice</h1>
+        <!-- THUMBNAILS -->
 
-<div class="stars">
+        <div class="thumbnail-container" id="thumbnailContainer">
 
-★★★★★
+            <div 
+                class="thumbnail active"
+                data-index="0"
+            >
+                <img 
+                    src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=300&q=80"
+                    alt="Product image 1"
+                >
+            </div>
 
-</div>
+            <div 
+                class="thumbnail"
+                data-index="1"
+            >
+                <img 
+                    src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=300&q=80"
+                    alt="Product image 2"
+                >
+            </div>
 
-<h2>$15.99</h2>
+            <div 
+                class="thumbnail"
+                data-index="2"
+            >
+                <img 
+                    src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=300&q=80"
+                    alt="Product image 3"
+                >
+            </div>
 
-<p>
+            <div 
+                class="thumbnail"
+                data-index="3"
+            >
+                <img 
+                    src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=300&q=80"
+                    alt="Product image 4"
+                >
+            </div>
 
-Fresh herbal juice made with Aloe Vera, Moringa,
-Ginger, Lemon and other natural herbs.
+        </div>
 
-</p>
+    </section>
 
-<h3>Benefits</h3>
 
-<ul>
+    <!-- =====================
+         PRODUCT INFORMATION
+    ====================== -->
 
-<li>Boosts immunity</li>
+    <section class="product-info">
 
-<li>Supports digestion</li>
+        <!-- CATEGORY -->
 
-<li>Rich in antioxidants</li>
+        <div class="product-category">
+            Skin Care
+        </div>
 
-<li>100% Natural</li>
 
-</ul>
+        <!-- TITLE -->
 
-<div class="quantity">
+        <div class="title-row">
 
-<button id="minus">-</button>
+            <h2>
+                SilkSkin Serum
+            </h2>
 
-<input type="number" value="1" id="qty">
+            <span class="stock-badge">
+                In Stock
+            </span>
 
-<button id="plus">+</button>
+        </div>
 
-</div>
 
-<button class="buy-now">
+        <!-- RATING -->
 
-Add To Cart
+        <div class="rating-row">
 
-</button>
+            <div class="stars">
 
-</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+            </div>
+
+            <span class="rating-number">
+                4.8
+            </span>
+
+            <span class="review-count">
+                (245 Reviews)
+            </span>
+
+        </div>
+
+
+        <!-- PRICE -->
+
+        <div class="price-row">
+
+            <span class="current-price">
+                $48.00
+            </span>
+
+            <span class="old-price">
+                $60.00
+            </span>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="product-description">
+
+            Experience a luxurious skincare routine with our SilkSkin Serum.
+            Specially formulated to help nourish and hydrate your skin,
+            leaving it feeling soft, refreshed and beautifully radiant.
+
+        </p>
+
+
+        <!-- SIZE -->
+
+        <div class="option-section">
+
+            <h4>
+                Size / Volume
+            </h4>
+
+            <div class="size-options">
+
+                <button 
+                    class="size-option active"
+                    data-size="30 ml"
+                >
+                    30 ml
+                </button>
+
+                <button 
+                    class="size-option"
+                    data-size="60 ml"
+                >
+                    60 ml
+                </button>
+
+                <button 
+                    class="size-option"
+                    data-size="80 ml"
+                >
+                    80 ml
+                </button>
+
+                <button 
+                    class="size-option"
+                    data-size="100 ml"
+                >
+                    100 ml
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PURCHASE CONTROLS -->
+
+        <div class="purchase-row">
+
+            <!-- QUANTITY -->
+
+            <div class="quantity-control">
+
+                <button id="decreaseQuantity">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+
+                <span id="quantity">
+                    1
+                </span>
+
+                <button id="increaseQuantity">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+            </div>
+
+
+            <!-- ADD TO CART -->
+
+            <button 
+                class="add-cart-button"
+                id="addToCartButton"
+            >
+                Add To Cart
+            </button>
+
+
+            <!-- BUY NOW -->
+
+            <button 
+                class="buy-now-button"
+                id="buyNowButton"
+            >
+                Buy Now
+            </button>
+
+
+            <!-- WISHLIST -->
+
+            <button 
+                class="wishlist-button"
+                id="wishlistButton"
+            >
+                <i class="fa-regular fa-heart"></i>
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT META -->
+
+        <div class="product-meta">
+
+            <p>
+                <strong>SKU:</strong>
+                GRF85648HGJ
+            </p>
+
+            <p>
+                <strong>Tags:</strong>
+                Skincare, Serums, Vitamin C
+            </p>
+
+
+            <!-- SOCIAL SHARE -->
+
+            <div class="share-row">
+
+                <span>
+                    Share:
+                </span>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- =========================
+     PRODUCT TABS
+========================= -->
+
+<section class="product-tabs-container">
+
+    <div class="product-tabs">
+
+        <button 
+            class="tab-button"
+            data-tab="description"
+        >
+            Description
+        </button>
+
+        <button 
+            class="tab-button"
+            data-tab="information"
+        >
+            Additional Information
+        </button>
+
+        <button 
+            class="tab-button active"
+            data-tab="reviews"
+        >
+            Review
+        </button>
+
+    </div>
+
+
+    <!-- =====================
+         DESCRIPTION TAB
+    ====================== -->
+
+    <div 
+        class="tab-content"
+        id="description"
+    >
+
+        <h3>
+            Product Description
+        </h3>
+
+        <p>
+            SilkSkin Serum is designed to become a simple and luxurious
+            addition to your everyday skincare routine. Its lightweight
+            texture absorbs comfortably into the skin while helping
+            maintain a smooth and hydrated appearance.
+        </p>
+
+        <p>
+            Apply a few drops to clean skin and gently massage until absorbed.
+        </p>
+
+    </div>
+
+
+    <!-- =====================
+         INFORMATION TAB
+    ====================== -->
+
+    <div 
+        class="tab-content"
+        id="information"
+    >
+
+        <h3>
+            Additional Information
+        </h3>
+
+        <div class="information-table">
+
+            <div>
+                <strong>Brand</strong>
+                <span>SilkSkin</span>
+            </div>
+
+            <div>
+                <strong>Category</strong>
+                <span>Skin Care</span>
+            </div>
+
+            <div>
+                <strong>Product Type</strong>
+                <span>Face Serum</span>
+            </div>
+
+            <div>
+                <strong>Available Sizes</strong>
+                <span>30 ml, 60 ml, 80 ml, 100 ml</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================
+         REVIEWS TAB
+    ====================== -->
+
+    <div 
+        class="tab-content active"
+        id="reviews"
+    >
+
+        <!-- REVIEW SUMMARY -->
+
+        <div class="review-summary">
+
+            <div class="overall-rating">
+
+                <strong>
+                    4.8
+                </strong>
+
+                <span>
+                    out of 5
+                </span>
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <small>
+                    (245 Reviews)
+                </small>
+
+            </div>
+
+
+            <!-- RATING BARS -->
+
+            <div class="rating-bars">
+
+                <div class="rating-bar-row">
+
+                    <span>5 Star</span>
+
+                    <div class="bar">
+                        <span style="width: 90%;"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="rating-bar-row">
+
+                    <span>4 Star</span>
+
+                    <div class="bar">
+                        <span style="width: 60%;"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="rating-bar-row">
+
+                    <span>3 Star</span>
+
+                    <div class="bar">
+                        <span style="width: 25%;"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="rating-bar-row">
+
+                    <span>2 Star</span>
+
+                    <div class="bar">
+                        <span style="width: 12%;"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="rating-bar-row">
+
+                    <span>1 Star</span>
+
+                    <div class="bar">
+                        <span style="width: 5%;"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- REVIEW LIST -->
+
+        <div class="review-header">
+
+            <div>
+                <h3>
+                    Review List
+                </h3>
+
+                <p>
+                    Showing 1-4 of 24 results
+                </p>
+            </div>
+
+
+            <div class="sort-reviews">
+
+                <label for="sortReviews">
+                    Sort by:
+                </label>
+
+                <select id="sortReviews">
+
+                    <option value="newest">
+                        Newest
+                    </option>
+
+                    <option value="oldest">
+                        Oldest
+                    </option>
+
+                    <option value="highest">
+                        Highest Rating
+                    </option>
+
+                    <option value="lowest">
+                        Lowest Rating
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- REVIEW 1 -->
+
+        <article class="review">
+
+            <div class="review-top">
+
+                <div class="review-user">
+
+                    <img 
+                        src="https://i.pravatar.cc/100?img=47"
+                        alt="Kristin Watson"
+                    >
+
+                    <div>
+
+                        <h4>
+                            Kristin Watson
+                        </h4>
+
+                        <span>
+                            Verified
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <time>
+                    1 month ago
+                </time>
+
+            </div>
+
+
+            <h4 class="review-title">
+                Absolutely love this product!
+            </h4>
+
+
+            <p class="review-text">
+
+                This serum has become one of my favorite parts of my skincare
+                routine. My skin feels soft, smooth and refreshed.
+
+            </p>
+
+
+            <div class="review-rating">
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <span>
+                    5.0
+                </span>
+
+            </div>
+
+
+            <!-- REVIEW IMAGES -->
+
+            <div class="review-images">
+
+                <img 
+                    src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=200&q=80"
+                    alt="Review image"
+                >
+
+                <img 
+                    src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=200&q=80"
+                    alt="Review image"
+                >
+
+                <img 
+                    src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=200&q=80"
+                    alt="Review image"
+                >
+
+            </div>
+
+        </article>
+
+
+        <!-- REVIEW 2 -->
+
+        <article class="review">
+
+            <div class="review-top">
+
+                <div class="review-user">
+
+                    <img 
+                        src="https://i.pravatar.cc/100?img=32"
+                        alt="Jenny Wilson"
+                    >
+
+                    <div>
+
+                        <h4>
+                            Jenny Wilson
+                        </h4>
+
+                        <span>
+                            Verified
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <time>
+                    2 months ago
+                </time>
+
+            </div>
+
+
+            <h4 class="review-title">
+                Perfect for my skincare routine
+            </h4>
+
+
+            <p class="review-text">
+
+                I really enjoy using this serum every morning.
+                It feels lightweight and leaves my skin feeling fresh.
+
+            </p>
+
+
+            <div class="review-rating">
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <span>
+                    5.0
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- REVIEW 3 -->
+
+        <article class="review">
+
+            <div class="review-top">
+
+                <div class="review-user">
+
+                    <img 
+                        src="https://i.pravatar.cc/100?img=12"
+                        alt="Darlene Robertson"
+                    >
+
+                    <div>
+
+                        <h4>
+                            Darlene Robertson
+                        </h4>
+
+                        <span>
+                            Verified
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <time>
+                    2 months ago
+                </time>
+
+            </div>
+
+
+            <h4 class="review-title">
+                Great product
+            </h4>
+
+
+            <p class="review-text">
+
+                The packaging looks beautiful and the product is easy to use.
+
+            </p>
+
+
+            <div class="review-rating">
+
+                <div class="stars">
+
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+
+                </div>
+
+                <span>
+                    4.0
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
 
 </section>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
 <script src="script.js"></script>
 
 </body>
-
 </html>

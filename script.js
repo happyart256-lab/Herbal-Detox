@@ -68,84 +68,84 @@ const products=[
 {
 name:"Sexual Power Tea",
 price:"UGX80,000",
-image:"Tea for Sexual.png",
+image:"Manpower TEA.png",
 badge:"20% OFF"
 },
 
 {
 name:" Ulcers Tea",
 price:"UGX60,000",
-image:"ulcer tea for menu-chart.png",
+image:"Ulcers Tea.png",
 badge:"Fresh"
 },
 
 {
 name:"Full Body Cleanser Tea",
 price:"UGX90,000",
-image:"fullbody cleanser.png",
+image:"FullBody Cleansing Tea.png",
 badge:"Organic"
 },
 
 {
 name:"Diabetes Tea",
 price:"UGX100,000",
-image:"diabetes tea.png ",
+image:"Dibetes Tea.png ",
 badge:"Best Sale"
 },
 
 {
 name:"Blood Pressure Tea",
 price:"UGX100,000",
-image:"blood pressure tea.png",
+image:"BloodPressure Tea.png",
 badge:""
 },
 
 {
 name:"Prostate Tea",
 price:"UGX85,000",
-image:"prostate tea.png",
+image:"Prostate Cleanser Tea.png",
 badge:"15% OFF"
 },
 
 {
-name:"Joints Pain Tea",
+name:"Joints Pain & Arthritis  Tea",
 price:"UGX73,000",
-image:"joint pain.png",
+image:"Arthritiis Tea.png",
 badge:""
 },
 
 {
 name:"Weight Loss Belly fat Tea",
 price:"UGX75,000",
-image:"fullbody cleanser.png",
+image:"7 Days Bellyfat Tea.png",
 badge:""
 },
 
 {
 name:"UTI & Infections Tea",
 price:"UGX80,000",
-image:"infection tea.png",
+image:"Infections Tea.png",
 badge:"Frozen"
 },
 
 {
 name:"Nerves & Blood Tea",
 price:"UGX83,000",
-image:"fullbody cleanser.png",
+image:"Blood & Nerves Tea.png",
 badge:"Best Sale"
 },
 
 {
 name:"Colon Cleanser Tea",
 price:"UGX85,000",
-image:"colon cleanser.png",
+image:"Colon Detox Tea.png",
 badge:"Fresh"
 },
 
 {
 name:"Womb/ Uterus Cleanser Tea ",
 price:"UGX90,000",
-image:"uterus cleanser.png",
+image:"Womb Cleanser Tea.png",
 badge:""
 },
 
@@ -230,5 +230,414 @@ search.addEventListener("keyup", function(){
     );
 
     displayProducts(filteredProducts);
+
+});
+
+
+
+
+/* =====================================
+   PRODUCT IMAGE GALLERY
+===================================== */
+
+const productImages = [
+
+    "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1000&q=80",
+
+    "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=80",
+
+    "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=1000&q=80",
+
+    "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=80"
+
+];
+
+
+let currentImageIndex = 0;
+
+
+const mainProductImage =
+    document.getElementById("mainProductImage");
+
+
+const thumbnails =
+    document.querySelectorAll(".thumbnail");
+
+
+const previousButton =
+    document.getElementById("previousButton");
+
+
+const nextButton =
+    document.getElementById("nextButton");
+
+
+/* =====================================
+   CHANGE PRODUCT IMAGE
+===================================== */
+
+function changeProductImage(index) {
+
+    currentImageIndex = index;
+
+
+    mainProductImage.style.opacity = "0";
+
+
+    setTimeout(() => {
+
+        mainProductImage.src =
+            productImages[currentImageIndex];
+
+        mainProductImage.style.opacity = "1";
+
+    }, 150);
+
+
+    /* Update active thumbnail */
+
+    thumbnails.forEach((thumbnail, i) => {
+
+        thumbnail.classList.toggle(
+            "active",
+            i === currentImageIndex
+        );
+
+    });
+
+}
+
+
+/* =====================================
+   THUMBNAIL CLICK
+===================================== */
+
+thumbnails.forEach((thumbnail) => {
+
+    thumbnail.addEventListener("click", () => {
+
+        const index =
+            Number(thumbnail.dataset.index);
+
+        changeProductImage(index);
+
+    });
+
+});
+
+
+/* =====================================
+   PREVIOUS BUTTON
+===================================== */
+
+previousButton.addEventListener("click", () => {
+
+    currentImageIndex--;
+
+    if (currentImageIndex < 0) {
+
+        currentImageIndex =
+            productImages.length - 1;
+
+    }
+
+    changeProductImage(currentImageIndex);
+
+});
+
+
+/* =====================================
+   NEXT BUTTON
+===================================== */
+
+nextButton.addEventListener("click", () => {
+
+    currentImageIndex++;
+
+    if (
+        currentImageIndex >=
+        productImages.length
+    ) {
+
+        currentImageIndex = 0;
+
+    }
+
+    changeProductImage(currentImageIndex);
+
+});
+
+
+/* =====================================
+   SIZE SELECTOR
+===================================== */
+
+const sizeOptions =
+    document.querySelectorAll(".size-option");
+
+
+sizeOptions.forEach((option) => {
+
+    option.addEventListener("click", () => {
+
+        sizeOptions.forEach((item) => {
+
+            item.classList.remove("active");
+
+        });
+
+
+        option.classList.add("active");
+
+
+        console.log(
+            "Selected size:",
+            option.dataset.size
+        );
+
+    });
+
+});
+
+
+/* =====================================
+   QUANTITY
+===================================== */
+
+let quantity = 1;
+
+
+const quantityDisplay =
+    document.getElementById("quantity");
+
+
+const decreaseQuantity =
+    document.getElementById("decreaseQuantity");
+
+
+const increaseQuantity =
+    document.getElementById("increaseQuantity");
+
+
+/* Increase */
+
+increaseQuantity.addEventListener("click", () => {
+
+    quantity++;
+
+    quantityDisplay.textContent =
+        quantity;
+
+});
+
+
+/* Decrease */
+
+decreaseQuantity.addEventListener("click", () => {
+
+    if (quantity > 1) {
+
+        quantity--;
+
+        quantityDisplay.textContent =
+            quantity;
+
+    }
+
+});
+
+
+/* =====================================
+   WISHLIST
+===================================== */
+
+const wishlistButton =
+    document.getElementById("wishlistButton");
+
+
+wishlistButton.addEventListener("click", () => {
+
+    wishlistButton.classList.toggle("active");
+
+
+    const icon =
+        wishlistButton.querySelector("i");
+
+
+    if (
+        wishlistButton.classList.contains("active")
+    ) {
+
+        icon.classList.remove(
+            "fa-regular"
+        );
+
+        icon.classList.add(
+            "fa-solid"
+        );
+
+    } else {
+
+        icon.classList.remove(
+            "fa-solid"
+        );
+
+        icon.classList.add(
+            "fa-regular"
+        );
+
+    }
+
+});
+
+
+/* =====================================
+   ADD TO CART
+===================================== */
+
+const addToCartButton =
+    document.getElementById("addToCartButton");
+
+
+addToCartButton.addEventListener("click", () => {
+
+    const selectedSize =
+        document.querySelector(
+            ".size-option.active"
+        ).dataset.size;
+
+
+    alert(
+
+        "Added to cart!\n\n" +
+
+        "Product: SilkSkin Serum\n" +
+
+        "Size: " +
+        selectedSize +
+        "\n" +
+
+        "Quantity: " +
+        quantity
+
+    );
+
+});
+
+
+/* =====================================
+   BUY NOW
+===================================== */
+
+const buyNowButton =
+    document.getElementById("buyNowButton");
+
+
+buyNowButton.addEventListener("click", () => {
+
+    const selectedSize =
+        document.querySelector(
+            ".size-option.active"
+        ).dataset.size;
+
+
+    alert(
+
+        "Proceeding to checkout...\n\n" +
+
+        "Product: SilkSkin Serum\n" +
+
+        "Size: " +
+        selectedSize +
+        "\n" +
+
+        "Quantity: " +
+        quantity
+
+    );
+
+});
+
+
+/* =====================================
+   PRODUCT TABS
+===================================== */
+
+const tabButtons =
+    document.querySelectorAll(".tab-button");
+
+
+const tabContents =
+    document.querySelectorAll(".tab-content");
+
+
+tabButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        const selectedTab =
+            button.dataset.tab;
+
+
+        /* Remove active from buttons */
+
+        tabButtons.forEach((item) => {
+
+            item.classList.remove(
+                "active"
+            );
+
+        });
+
+
+        /* Remove active from content */
+
+        tabContents.forEach((content) => {
+
+            content.classList.remove(
+                "active"
+            );
+
+        });
+
+
+        /* Activate clicked tab */
+
+        button.classList.add("active");
+
+
+        const targetContent =
+            document.getElementById(
+                selectedTab
+            );
+
+
+        targetContent.classList.add(
+            "active"
+        );
+
+    });
+
+});
+
+
+/* =====================================
+   REVIEW SORT
+===================================== */
+
+const sortReviews =
+    document.getElementById("sortReviews");
+
+
+sortReviews.addEventListener("change", () => {
+
+    const selectedValue =
+        sortReviews.value;
+
+
+    console.log(
+        "Reviews sorted by:",
+        selectedValue
+    );
 
 });
