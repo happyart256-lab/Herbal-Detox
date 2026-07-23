@@ -190,7 +190,7 @@ nav a.active{
     width:100%;
     min-height:100vh;
 
-    background:url("./juice\ thumbnail.png") center center/cover no-repeat;
+    background:url("./low\ lighthero\ section\ image.png") center center/cover no-repeat;
 
     display:flex;
     align-items:center;
@@ -198,6 +198,7 @@ nav a.active{
     padding:80px 8%;
 
     overflow:hidden;
+    
 }
 
 .overlay{
@@ -213,7 +214,7 @@ nav a.active{
 
     max-width:600px;
 
-    color:#fff;
+    color:#ffffff;
 }
 
 .hero h3{
